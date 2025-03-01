@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFBanka.Forme.FrmTransakcija"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBanka.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni transakciju" Height="330" Width="370"  Background="LightGray">
+    <Grid>
+        <Label Content="Datum" HorizontalAlignment="Left" Margin="37,27,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="dpDatum" HorizontalAlignment="Left" Margin="202,27,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tip [uplata/isplata]" HorizontalAlignment="Left" Margin="37,76,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTip" HorizontalAlignment="Left" Height="23" Margin="183,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Iznos" HorizontalAlignment="Left" Margin="37,113,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtIznos" HorizontalAlignment="Left" Height="23" Margin="183,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Račun" HorizontalAlignment="Left" Margin="37,156,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.278,0.18"/>
+        <ComboBox Name="cbRacun" HorizontalAlignment="Left" Margin="183,156,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Račun" SelectedValuePath="RačunID"/>
+        <Label Content="Zaposleni" HorizontalAlignment="Left" Margin="37,194,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbZaposleni" HorizontalAlignment="Left" Margin="183,194,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Zaposleni" SelectedValuePath="ZaposleniID"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" Background="SlateGray" Foreground="White" BorderBrush="White" Click="btnSacuvaj_Click" HorizontalAlignment="Left" Margin="37,250,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" Background="SlateGray" Foreground="White" BorderBrush="White" Click="btnOtkazi_Click" HorizontalAlignment="Left" Margin="228,250,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

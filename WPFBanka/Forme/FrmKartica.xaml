@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPFBanka.Forme.FrmKartica"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBanka.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni karticu" Height="200" Width="300"  Background="LightGray">
+    <Grid>
+        <Label Content="Račun"  HorizontalAlignment="Left" Margin="33,28,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbRacun" HorizontalAlignment="Left" Margin="144,28,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="BrojRačuna" SelectedValuePath="RačunID"/>
+        <Label Content="Tip kartice" HorizontalAlignment="Left" Margin="33,70,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbTipKartice" HorizontalAlignment="Left" Margin="144,73,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="NazivTipaKartice" SelectedValuePath="TipKarticeID"/>
+        <Button x:Name="btnSacuvaj"  Background="SlateGray" Foreground="White" BorderBrush="White" Content="Sačuvaj" Click="btnSacuvaj_Click" HorizontalAlignment="Left" Margin="33,134,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnOtkazi"  Background="SlateGray" Foreground="White" BorderBrush="White" Content="Otkaži" Click="btnOtkazi_Click" HorizontalAlignment="Left" Margin="189,134,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
